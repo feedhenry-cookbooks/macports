@@ -24,6 +24,9 @@ if node['platform_family'] == 'mac_os_x'
   when 11
     default['macports']['url'] = 'http://downloads.sourceforge.net/project/macports/MacPorts/2.3.4/MacPorts-2.3.4-10.11-ElCapitan.pkg'
     default['macports']['checksum'] = '8c0b492032c796d766b76da3d1fda8dea732a6cc9056633a3509e3ff06b5e8d8'
+  when 12
+    default['macports']['url'] = 'http://downloads.sourceforge.net/project/macports/MacPorts/2.3.4/MacPorts-2.3.4-10.12-Sierra.pkg'
+    default['macports']['checksum'] = '0fda4bfcbd922e20b489c762ee6d755d63df5a1e5f3666f71af95d96c9d398c8'
   else
     fail "Unsupported platform version #{node['platform_version']}"
   end
